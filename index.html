@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf8f5"><meta name="description" content="Mi Espacio, tu organizador escolar personal.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Mi Espacio">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+
+<title>Mi Espacio · Organizador personal</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="#" data-page="today"><span class="brand-mark">m.</span><span><b>Mi Espacio</b><small>organizador personal</small></span></a>
+    <div class="side-label">TU ESPACIO</div>
+    <nav id="nav">
+      <button class="nav-item active" data-page="today"><span>⌂</span> Mi día</button>
+      <button class="nav-item" data-page="shelf"><span>▤</span> Estantería</button>
+      <button class="nav-item" data-page="review"><span>✧</span> Tarjetas de repaso</button>
+      <button class="nav-item" data-page="calendar"><span>▦</span> Calendario</button>
+      <button class="nav-item" data-page="tasks"><span>☷</span> Tareas y exámenes</button>
+      <button class="nav-item" data-page="habits"><span>♡</span> Hábitos</button>
+      <button class="nav-item" data-page="study"><span>◷</span> Modo estudio</button>
+      <button class="nav-item" data-page="grades"><span>✎</span> Registro de notas</button>
+      <button class="nav-item" data-page="stats"><span>▥</span> Progreso y estadísticas</button>
+      <button class="nav-item" data-page="schedule"><span>▤</span> Mi horario</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="mini-note"><span class="sparkle">✧</span><p>Un paso a la vez.<br><b>Vas muy bien.</b></p></div><button class="nav-item" data-page="settings"><span>⚙</span> Ajustes y copias</button><div class="local-status"><i></i> Guardado en este dispositivo</div></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><button class="mobile-brand" data-page="today">m. <span>Mi Espacio</span></button><div class="top-right"><span id="todayLabel"></span><button class="avatar" id="avatarBtn" title="Editar perfil">L</button></div></header>
+    <div id="pageContent" class="page-content"></div>
+    <footer>Hecho para ti, a tu ritmo <span>✧</span></footer>
+  </main>
+</div>
+<div id="modalRoot"></div><div id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+<script src="pwa-register.js"></script>
+</body></html>

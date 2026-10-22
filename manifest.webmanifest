@@ -1,0 +1,32 @@
+{
+  "id": "./",
+  "name": "Mi Espacio — Organizador escolar",
+  "short_name": "Mi Espacio",
+  "description": "Tu organizador escolar personal para tareas, exámenes, hábitos y estudio.",
+  "lang": "es-ES",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#faf8f5",
+  "theme_color": "#faf8f5",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
